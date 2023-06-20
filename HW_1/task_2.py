@@ -30,7 +30,7 @@ if num < 4:
 
 divider = 2
 while divider <= round(num**0.5):
-	if (num % divider) == 0:
+	if num % divider == 0:
 		print('Это число составное')
 		break
 	divider += 1
