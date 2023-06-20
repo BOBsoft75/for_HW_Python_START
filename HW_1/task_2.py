@@ -14,7 +14,11 @@ while i <= count:
 	print('Попытка ' + str(i))
 	i += 1
 	num = int(input('Введите число между ' + str(MIN_LIMIT) + ' и ' +	str(MAX_LIMIT) + ': '))
-	if num < MIN_LIMIT or num > MAX_LIMIT:
+	if num == 0:
+		print("0 не является простым или составным числом")
+	elif num == 1:
+		print("1 не является простым или составным числом")
+	elif num < MIN_LIMIT or num > MAX_LIMIT:
 		print('Введенное число вне ограничений от 0 до 100000, введите корректное число: ')
 	else:
 		break
@@ -24,9 +28,12 @@ else:
 
 print('Было введено число ' + str(num) + ', проверка на простое/составное: ')
 
-if num < 4:
+if num == 3:
 	print('Число простое')
-	quit()
+	quit()	
+elif num == 2:
+	print('Число составное')
+	quit()	 
 
 divider = 2
 while divider <= round(num**0.5):
@@ -36,4 +43,3 @@ while divider <= round(num**0.5):
 	divider += 1
 else:
 	print('Это число простое')
-	
