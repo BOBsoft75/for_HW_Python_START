@@ -11,7 +11,7 @@ SIDE_A = 2
 SIDE_B = 2
 SIDE_C = 2
 
-if SIDE_A >= (SIDE_B + SIDE_C):
+if SIDE_A >= SIDE_B + SIDE_C:
     print("Сторона треугольника равная " + str(SIDE_A) + ", должна быть меньше суммы длин других сторон (" +
           str(SIDE_B + SIDE_C) + ") - такого треугольника не существует")
 elif SIDE_B >= (SIDE_A + SIDE_C):
