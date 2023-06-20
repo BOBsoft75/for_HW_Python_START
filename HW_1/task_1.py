@@ -23,7 +23,7 @@ elif SIDE_C >= (SIDE_A + SIDE_B):
 else:
     if SIDE_A == SIDE_B == SIDE_C:
         print("Треугольник равносторонний")
-    elif SIDE_A == SIDE_B or SIDE_A == SIDE_C or SIDE_B == SIDE_C:
-        print("Треугольник равнобедренный")
-    else:
+    elif SIDE_A != SIDE_B != SIDE_C:
         print("Треугольник Разносторонний")
+    else:
+        print("Треугольник равнобедренный")
