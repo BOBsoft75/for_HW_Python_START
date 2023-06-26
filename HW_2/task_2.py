@@ -13,10 +13,8 @@ frac2  = input('Введи вторую дробь в формате “a/b”: 
 # frac1  = "1/3"
 # frac2  = "3/5"
 
-divider1 = int(frac1[:frac1.find("/")])
-denominator1 = int(frac1[frac1.find("/")+1:])
-divider2 = int(frac2[:frac2.find("/")])
-denominator2 = int(frac2[frac2.find("/")+1:])
+divider1, denominator1  = map(int, frac1.split("/"))
+divider2, denominator2  = map(int, frac2.split("/"))
 
 str_sum = str(divider1 * denominator2 + divider2 * denominator1) + "/" \
         + str(denominator1 * denominator2)
