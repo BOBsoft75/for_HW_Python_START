@@ -25,7 +25,7 @@ while num > 0:
     else:
         hex_modul = str(dec_modul)
     hex_num = hex_modul + hex_num
-    num = num // 16
+    num //= 16
     print(num, dec_modul)
 
 hex_num = "0x" + hex_num
