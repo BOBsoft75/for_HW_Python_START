@@ -4,8 +4,8 @@
 my_list = [1, 2, 3, 5, 2, 17, 1, 17, 4, 2, 9, 5, 6]
 res_list = []
 
-for item in my_list:
-    if my_list.count(item) > 1 and item not in res_list:
+for item in set(my_list):
+    if my_list.count(item) > 1:
         res_list.append(item)
 
 print(f'Исходный список: ', str(my_list))
