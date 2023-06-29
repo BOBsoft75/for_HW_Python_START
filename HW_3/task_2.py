@@ -33,8 +33,7 @@ list1 = str2.split()
 my_dict = {}
 
 for item in list1:
-    my_dict.setdefault(item, 0)
-    my_dict[item] = my_dict[item] + 1
+    my_dict[item] = my_dict.get(item, 0) + 1
 
 sorted_list = sorted(my_dict.items(), key=lambda x: x[1], reverse=True)
 result_list = sorted_list[:10]
