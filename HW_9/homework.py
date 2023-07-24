@@ -28,13 +28,11 @@ def deco_csv(function: Callable):
 
 
 def json_result(func: Callable):
-    result = {}
     if os.path.exists('solutions.json'):
         with open('solutions.json', 'r', encoding='UTF-8') as file:
             result = json.load(file)
     else:
-        with open('solutions.json', 'w', encoding='UTF-8') as file:
-            json.dump(result, file)
+        result = {}
 
     def wrapper(*args):
         roots = func(*args)
