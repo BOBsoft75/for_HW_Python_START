@@ -39,36 +39,36 @@ class Matrix:
         return s
 
 
-m_1 = [[1, 2, 3],
+mx_1 = [[1, 2, 3],
         [4, 5, 6],
         [-1, 4, 0],
         [7, -5, 11]]
 
-m_2 = [[3, 2, 1],
-        [6, 5,  4],
+mx_2 = [[3, 2, 1],
+        [6, 5, 4],
         [-5, 9, 0],
         [9, -3, 10]]
 
-m_3 = [[1, 2, 3, 4],
+mx_3 = [[1, 2, 3, 4],
         [0, 9, -8, 7],
         [-4, 10, 1, 5]]
 
-m_4 = [[1, 2, 3, 4, 5],
+mx_4 = [[1, 2, 3, 4, 5],
         [5, 6, 7, 8, 9],
         [-5, -4, -3, -2, -1]]
 
-matr_1 = Matrix(m_1)
-matr_2 = Matrix(m_2)
-matr_3 = Matrix(m_3)
-matr_4 = Matrix(m_4)
+matr_1 = Matrix(mx_1)
+matr_2 = Matrix(mx_2)
+matr_3 = Matrix(mx_3)
+matr_4 = Matrix(mx_4)
 
 print ("Cложение матриц:")
 matr_sum = matr_1 + matr_2
 print(matr_sum)
 
 print ("Умножение матриц:")
-matr_mul = matr_1 * matr_3
-print(matr_mul)
+matr_multiply = matr_1 * matr_3
+print(matr_multiply)
 print(matr_1 * matr_4)
 
 print ("Cравнение матриц:")
