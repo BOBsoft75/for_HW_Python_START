@@ -20,7 +20,7 @@ class User:
     def __hash__(self):                                     # при переопределениии eq надо переопределять hash
         return hash(self.name) + hash(self.user_id)
 
-    def __eq__(self, other):                                                           # True/False в зависимоти от выполнения условий
+    def __eq__(self, other):                                # True/False в зависимоти от выполнения условий
         return self.name == other.name and self.user_id == other.user_id
 
 

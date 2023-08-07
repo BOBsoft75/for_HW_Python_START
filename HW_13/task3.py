@@ -33,3 +33,4 @@ def fun(num):
 if __name__ == '__main__':
     #raise LevelError(4)
     fun(3)
+    
