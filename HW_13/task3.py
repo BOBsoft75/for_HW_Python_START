@@ -24,10 +24,10 @@ class AccesErorr(BaseExeption):
 def fun(num):
     if num < 2:
         raise AccesErorr
-    elif num > 5:
+    if num > 5:
         raise LevelError
-    else:
-        print('Все Ок')
+
+    print('Все Ок')
 
 
 if __name__ == '__main__':
