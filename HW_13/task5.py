@@ -38,8 +38,8 @@ class UserWorkshop:
         if current_level := self.login(cur_name, cur_id):  # если есть пользователь и уровень у него не 0
             if int(current_level) > int(level):
                 return User(name, id, level)        # создаем нового пользователя, если уровень авторизированного пользователя выше уровня создаваемого пользов
-            else:
-                raise LevelError(current_level, level)
+
+            raise LevelError(current_level, level)
 
 
 b = UserWorkshop()
